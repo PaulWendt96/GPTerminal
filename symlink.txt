@@ -33,3 +33,12 @@ utils/athena/guess_schema.sh guess_schema
 
 # Usage: guess_table datalake_agg uc_zones | ask_gpt
 utils/athena/guess_table.sh guess_table
+
+# Usage: bash_code "exit code"
+utils/bash_code.sh bash_code
+
+# I have other commands that require a slightly different setup
+#
+#   `fix`, for asking GPT to fix a command that just ran and failed
+#   `run`, for running GPT's suggestion from `fix`
+#   `hang`, to ask GPT why it things a bash command you ctrl + c'd out of was hanging
