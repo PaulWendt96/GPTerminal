@@ -19,11 +19,6 @@ I initially did this out of curiosity, but I've found interacting with ChatGPT i
 `bugs`      -- find bugs (`bugs <file> | ask_gpt`)
 `explain`   -- explain what a file does (`explain <file> | ask_gpt`)
 
-### Data Engineering Helpers
-`guess_column` -- guess the purpose of a column in a table
-`guess_schema` -- guess what each column in a table represents
-`guess_table`  -- guess the overarching purpose of a table
-
 ### Personalities
 `personality` -- augment a prompt with a personality, e.g. `echo "say hello" | personality "pretentious intellectual" | ask_gpt`
 `prompt_engineer` -- will try to improve a prompt, e.g. `echo "output all responses as a sonnet" | prompt_engineer | ask_gpt`
