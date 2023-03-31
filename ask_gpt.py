@@ -37,15 +37,3 @@ data = {
 response = requests.post(endpoint, headers=headers, data=json.dumps(data))
 content = response.json()["choices"][0]["message"]["content"]
 print(content)
-
-# save the request
-history="/Users/paulwendt/utils/bash/chatgpt/history.json"
-if os.path.isfile(history):
-    with open(history, "r") as file:
-        contents = json.load(file)
-else:
-    contents = []
-
-contents.append({"request": data, "response": content})
-with open(history, "w") as file:
-    json.dump(contents, file)
