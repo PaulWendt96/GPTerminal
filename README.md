@@ -3,6 +3,7 @@ This repo contains a number of scripts I use to interact with ChatGPT through my
 I initially did this out of curiosity, but I've found interacting with ChatGPT in the terminal to be very powerful. 
 
 ## Setup
+**A lot of this code is pretty specific to my local setup. YMMV**
 1. Get an OpenAI API key. Add it to your environment with the name `OPENAI_KEY`.
 2. Symlink the `ask_gpt.py` file to somewhere in your $PATH. The command I ran to do this was:
 
