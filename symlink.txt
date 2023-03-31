@@ -1,0 +1,35 @@
+# Dynamically symlink files into /usr/local/bin
+# Usage: cat symlink.txt | ./symlinker.sh
+
+# Primary function for asking GPT questions
+ask_gpt.py ask_gpt
+
+# Usage: bugs <file> | ask_gpt
+bugs/bugs.py bugs
+
+# Usage: echo "act like a pirate" | prompt_engineer | ask_gpt
+personalities/prompt_engineer.sh prompt_engineer
+
+# Usage: explain symlinker.sh | ask_gpt
+utils/explain.py explain
+
+# Usage: echo "make up some shakespearean prose" | personality "white kid who thinks he is gangster" | ask_gpt
+utils/personality.sh personality
+
+# Usage: echo "vacation destinations" | recommend | ask_gpt
+utils/recommend.sh recommend
+
+# Usage: cat README.md | summary | ask_gpt
+utils/summary.sh summary
+
+# GPT + Athena/Glue
+# Most of these scripts include a final argument where you can specify the # of rows to pull in the sample
+
+# Usage: guess_column datalake_agg uc_zones "zone_name" | ask_gpt
+utils/athena/guess_column.sh guess_column
+
+# Usage: guess_schema datalake_agg uc_zones | ask_gpt
+utils/athena/guess_schema.sh guess_schema
+
+# Usage: guess_table datalake_agg uc_zones | ask_gpt
+utils/athena/guess_table.sh guess_table
