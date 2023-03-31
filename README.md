@@ -1,5 +1,5 @@
 ## Most important command
-`ask_gpt.py`   -- thin wrapper around chatGPT. expects input from stdin
+`ask_gpt.py`   -- thin wrapper around chatGPT. expects input from stdin. you'll need OPENAI_KEY set as an environment variable
 
 ## Bash helpers
 `fix`       -- will ask GPT to correct a failing command (this requires rerunning the command + capturing stdout/stderr)
